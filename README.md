@@ -12,8 +12,8 @@ Institution: Shenzhen Key Laboratory of Media Information Content Security(MICS)
 Team name: Forensics_SZU  
 
 Username: BokingChen
-- [Baoying Chen](https://github.com/beibuwandeluori) email: 1900271059@email.szu.edu.cn
 - [Han Chen](https://github.com/HanChenSz) email:2016130205@email.szu.edu.cn
+- [Baoying Chen](https://github.com/beibuwandeluori) email: 1900271059@email.szu.edu.cn
 - [Yanjie Hu](https://github.com/zero-end)
 - [Sili Li](https://github.com/szu-lisili)
 - [Weilong Wu](https://github.com/wu-leaf)
