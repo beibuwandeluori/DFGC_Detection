@@ -3,6 +3,9 @@ This repo provides an solution for the [DeepFake Game Competition (DFGC) @ IJCB 
 Our solution achieve the 1st in the sixth phase of the DFGC Detection track.
 The ranking can be seen [here](https://competitions.codalab.org/competitions/29583#results)
 
+## Technology Report Papers
+[DFGC 2021: A DeepFake Game Competition](https://arxiv.org/pdf/2106.01217.pdf)
+
 ## Authors
 Institution: Shenzhen Key Laboratory of Media Information Content Security(MICS)
 
