@@ -1,3 +1,4 @@
+# borrow from https://github.com/neverUseThisName/Face-X-Ray
 import numpy as np
 import random
 from PIL import Image
@@ -98,30 +99,6 @@ def colorTransfer(src, dst, mask):
     transferredDst[maskIndices[0], maskIndices[1]] = maskedDst
 
     return transferredDst
-
-def blend_real_real_img(this_path, this_landmark, searched_path, searched_landmark, size=(256, 256)):
-    foreground_face = cv2.cvtColor(cv2.imread(this_path, cv2.IMREAD_COLOR), cv2.COLOR_BGR2RGB)
-    background_face = cv2.cvtColor(cv2.imread(searched_path, cv2.IMREAD_COLOR), cv2.COLOR_BGR2RGB)
-    foreground_face = cv2.resize(foreground_face, size)
-    background_face = cv2.resize(background_face, size)
-
-    # get random type of initial blending mask 
-    this_landmark = this_landmark * (size[0]/256)   
-    mask = random_get_hull(this_landmark, foreground_face)
-    
-    #  random deform mask
-    mask = distortion.augment_image(mask)
-    mask = random_erode_dilate(mask)
-
-    # apply color transfer
-    foreground_face = colorTransfer(background_face, foreground_face, mask*255)
-    
-    # blend two face
-    blended_face, mask = blendImages(foreground_face, background_face, mask*255)
-    blended_face = blended_face.astype(np.uint8)
-
-
-    return blended_face
 
 def blend_fake_real_img(this_path, this_landmark, searched_path, searched_landmark, size=(256, 256)):
     foreground_face = cv2.cvtColor(cv2.imread(this_path, cv2.IMREAD_COLOR), cv2.COLOR_BGR2RGB)
