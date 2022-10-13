@@ -6,6 +6,8 @@ The ranking can be seen [here](https://competitions.codalab.org/competitions/295
 ## Technology Report Papers
 [DFGC 2021: A DeepFake Game Competition](https://arxiv.org/pdf/2106.01217.pdf)
 
+## Newly: code for [1st solution for DFGC2022](https://github.com/chenhanch/DFGC-2022-1st-place)
+
 ## Authors
 Institution: Shenzhen Key Laboratory of Media Information Content Security(MICS)
 
